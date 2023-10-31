@@ -1,0 +1,327 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kanit&family=Poppins:wght@500;700&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3c4227fa;
+    color: #eec2c2;
+    width: 100%;
+    /* height: 100vh; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    /* position: sticky; */
+    /* top: 0; */
+}
+.header .logo{
+    margin-left:15%;
+    
+}
+.header .logo a{
+    /* font-size: 30px; */
+    color: rgb(255, 255, 255);
+    /* color: rgb(255, 0, 43); */
+    text-shadow: 1px 1px 5px rgb(0, 200, 236);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.header a{
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 255, 234) ;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all .3s ease-in;
+}
+.header a:hover{
+    text-shadow: 1px 1px 10px rgb(0, 255, 234),1px 1px 10px rgb(0, 255, 234);
+}
+.container{
+    
+    margin: 20px 100px;
+    display: flex;
+    border: 2px solid;
+    position: relative;
+}
+.container .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.container .detail h2{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.container .detail span{
+    color: red;
+}
+.container .detail p{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .detail div{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.container .profile{
+    width: 500px;
+    height: 410px;
+    background-image: url(images/Akash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 100% rgb(242, 246, 247));
+    transition: filter .8s ease-in-out;
+}
+.container .profile:hover{
+    filter: drop-shadow(0px 0px 20px rgb(4, 250, 229));
+}
+.container .download{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 45%; 
+}
+.download button{
+    color: rgb(0, 255, 242);
+    padding: 10px;
+    background-color: rgb(19, 18, 18);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 255, 234);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .4s ease-in;
+    cursor: pointer;
+}
+.download .btn-1{
+    margin-right: 2rem;
+}
+.download .btn-2{
+    margin-left: 9rem;
+}
+.download button:hover{
+    background-color: white;
+    color: black;
+}
+.about {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about  img{
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.about P{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about .inner_about  > p{
+    width: 700px;
+    text-align: justify;
+    padding-top: 15px;
+    padding-right: 2rem;
+}
+.about .inner_about h1{
+text-decoration: underline aqua;
+}
+.about .aboutme .box{
+    padding-top: 15px;
+}
+.about .box p{
+    padding: 1rem;
+}
+.about .box h2{
+    color: #ff0000;
+}
+.skill{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.skill img{
+    width: 400px;
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+    left: 170px;
+    top: 100px;
+    cursor: pointer;
+}
+.skill .inner_skill{
+    margin-top: 5rem;
+}
+.skill .inner_skill p{
+    width: 700px;
+    padding:10px 0;
+}
+
+.inner_skill  li{
+    padding: 10px 0px;
+    list-style: none;
+}
+.inner_skill h1{
+    text-decoration: underline aqua;
+}
+.inner_skill .addskill h3{
+    color: #ff0000;
+}
+hr{
+    margin:4rem 400px 0 400px;
+}
+.Projects{
+    margin:70px 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.Projects h1{
+    text-decoration: underline aqua;
+}
+.Projects h2{
+    color: #ff0000;
+}
+.Projects p{
+    text-align: justify;
+}
+
+.Projects img{
+    width: 800px;
+    border: 1px solid rgb(245, 241, 1);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.Projects a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.Projects a:hover{
+    color: aqua;
+}
+.Projects a:active{
+    color: #ff0000;
+}
+.error {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+.input_group{
+    padding: 20px;  
+      
+}
+.input_group input, textarea{
+    padding: 15px 2rem 15px 5px;
+    font-size:1rem;
+    width: 500px;
+    outline: none;
+    background-color: rgb(66, 65, 65);
+    color: white;
+    font-weight: bold;
+    border: 1px solid aqua;
+    border-radius: 5px;
+}
+.input_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input_detail .submit{
+    padding: 13px 10px 13px 10px;
+    width: 200px;
+    margin-top: 10px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 65, 65);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid aqua;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .5s ease-in-out;
+
+}
+.input_detail .submit:hover{
+    background-color: aqua;
+    color: black;
+}
+#portfolioForm{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+#portfolioForm h1{
+    color: red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline ;
+
+}
+.infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.infor p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+.infor .social_media_iocns i {
+    font-size: 1.5rem;
+    background-color: aqua;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+
+}
+.infor .social_media_iocns i:hover{
+    background-color: white;
+}
+.infor p i{
+    color: aqua;
+}
+.footer p{
+    text-align: center;
+    padding: 2rem;
+    font-size: 20px;
+
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="images/portfoloio-removebg-preview.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href=""> Akash</a>
+        </div>
+        <div class="nav">      
+            <a href="">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skill">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="profile"> </div>
+        <div class="detail">
+            <h2>Hi, i'm <span>Akash,</span> </h2>
+            <p> <span>Frontend Developer</span>  From Chennai </p>
+            <div>Frontend developer with expertise in creating responsive and visually appealing web interfaces using HTML, CSS, and JavaScript, ensuring a seamless user experience..</div>
+        </div>
+        <div class="download">
+            <button class="btn-1">Download Resume</button>
+            <button class="btn-2">Contact Me</button>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="profile">
+            <img src="images/profile.jpg" alt="profile">
+        </div>
+        <div class="inner_about">
+            <h1>About Me</h1>
+            <p class="">Creating a portfolio as a frontend developer is a crucial step in showcasing your skills, experience, and work to potential employers or clients. A well-organized and visually appealing portfolio can make a significant difference in your job search or freelance opportunities.</p>
+            
+            <div class="aboutme">
+                <div class="box">
+                    <h2>Education</h2>
+                    <p>➠ BCA Completed From Annamalai University</p>
+                </div>
+                
+                <div class="box">
+                    <h2>Exprience</h2>
+                    <p>➠ WebDevelopment internship Completed at ICT Academy</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   
+    <hr>
+    <div class="skill" id="skill">
+
+        <div class="profile">
+            <img src="images/Front-end-image.png" alt="skill">
+        </div>
+        
+        <div class="inner_skill">
+            <h1>Skills</h1>
+            <p>As a frontend developer, your portfolio should showcase your skills, creativity, and ability to create visually appealing and functional web interfaces. Here's a list of skills you should consider highlighting in your portfolio</p>
+            
+            <div class="frontend">
+                <ul>
+                    <li>➠ HTML  </li>
+                    <li>➠ CSS </li>
+                    <li>➠ JavaScript</li>
+                    <li>➠ Bootstrstrap </li>
+                    <li>➠ React </li>
+                    <li>➠ Git & GitUp </li>
+                </ul>
+            </div>
+        
+            <div class="addskill">
+                <h3>Additional Skills</h3>
+                <ul>
+                    <li>➠ Canva</li>
+                    <li>➠ Photoshop</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <hr>
+
+    <div class="Projects" id="Projects">
+        <h1>Projects</h1>
+        <h2>E-Learning Website <i class='bx bxs-book-reader'></i></h2>
+        <p> E-learning, short for electronic learning, refers to the use of electronic technology, particularly the internet, to facilitate learning and education. E-learning websites are online platforms that provide various educational resources and tools to help individuals acquire knowledge, develop skills, or earn qualifications. These websites have become increasingly popular and have revolutionized the way people access education and training. Here are some key aspects of e-learning websites</p>
+        <img src="images/Project1.png" alt="">
+        <div class="link">
+            <a href="Projects/elearning.html" target="_blank">Visite Website ☜</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    
+    <form id="portfolioForm" >
+        <div class="infor">
+            <h1>Contact Me</h1>
+            <p><i class='bx bxl-telegram'></i> akashakash44566@gmail.com</p>
+            <p><i class='bx bxs-phone'></i> 1202001010</p>
+            <div class="social_media_iocns">
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram'></i>
+            </div>
+        </div>
+       
+
+        <div class="input_detail">
+        
+            <div class="input_group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <p id="nameError" class="error"></p>
+            </div>
+            
+            <div class="input_group">
+                <input type="email" id="email" name="email" placeholder="Your E-Mail" required>
+                <p id="emailError" class="error"></p>
+            </div>
+
+            <div class="input_group">
+                <textarea id="message" name="message" placeholder="Type Message..." required></textarea>
+                <p id="messageError" class="error"></p>
+            </div>
+
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div id="successMessage" class="hidden">
+        <p>Your message has been sent successfully!</p>
+    </div>
+<hr>
+    <footer class="footer">
+        <p>Copyright © 2023.All Rights Reserved.</p>
+        
+    </footer>
+</body>
+</html>
